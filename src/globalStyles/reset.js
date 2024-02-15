@@ -1,13 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const ResetStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-  :root {
-    --black: #101750;
-  }
-
-
+const ResetStyles = createGlobalStyle`
   *,
   *::after,
   *::before {
@@ -29,5 +22,6 @@ export const ResetStyles = createGlobalStyle`
   a:visited {
     color: inherit;
   }
-
 `;
+
+export default ResetStyles;

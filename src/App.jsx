@@ -1,12 +1,11 @@
-import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { Heading1 } from './typography/Heading';
+import Header from './layout/Header';
 
 const App = () => {
   return (
     <>
-      <Heading1>Hello</Heading1>
+      <Header />
 
       <BrowserRouter>
         <Routes></Routes>

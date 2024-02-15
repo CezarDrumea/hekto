@@ -15,12 +15,13 @@ const ResetStyles = createGlobalStyle`
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    color: var(--black);
+    color: ${({ theme }) => theme.black};
   }
 
   a:link,
   a:visited {
     color: inherit;
+    text-decoration: none;
   }
 `;
 

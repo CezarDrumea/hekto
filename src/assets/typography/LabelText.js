@@ -4,6 +4,8 @@ export const LabelText = styled.p`
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2rem;
+  display: flex;
+  align-items: center;
 `;
 
 export const LabelTextBold = styled(LabelText)`

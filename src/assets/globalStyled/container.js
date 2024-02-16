@@ -9,7 +9,6 @@ const Container = styled.div.attrs(
     $gap,
     $color,
     $flex,
-    $pointer,
   }) => ({
     $pageContainer: $pageContainer ? '131.2rem' : 'none',
     $display: $spaceBtwn || $alignCenter || $gap ? 'flex' : 'block',
@@ -18,7 +17,6 @@ const Container = styled.div.attrs(
     $gap: $gap ? $gap : 'normal',
     $color: theme[$color] ? theme[$color] : theme.black,
     $flex: $flex ? $flex : '0 1 auto',
-    $pointer: $pointer ? 'pointer' : 'auto',
   })
 )`
   max-width: ${({ $pageContainer }) => $pageContainer};
@@ -28,7 +26,6 @@ const Container = styled.div.attrs(
   gap: ${({ $gap }) => $gap};
   color: ${({ $color }) => $color};
   flex: ${({ $flex }) => $flex};
-  cursor: ${({ $pointer }) => $pointer};
 `;
 
 export default Container;

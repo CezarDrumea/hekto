@@ -25,7 +25,7 @@ export const Contact = styled.a`
   margin-right: 4.8rem;
 `;
 
-export const MenuLink = styled.a`
+export const MenuLink = styled(Link)`
   display: flex;
   align-items: center;
   gap: 0.4rem;

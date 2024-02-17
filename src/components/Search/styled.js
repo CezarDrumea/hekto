@@ -18,11 +18,15 @@ export const SearchContainer = styled.div`
     border: none;
     outline: none;
 
+    &,
     &::placeholder {
       font-family: Lato;
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 1.6rem;
+    }
+
+    &::placeholder {
       color: ${colors.grey3};
     }
   }

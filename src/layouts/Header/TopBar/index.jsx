@@ -25,17 +25,19 @@ const TopBar = () => {
           <Select options={languages} />
           <Select options={currencies} />
 
-          <S.MenuLink>
+          <S.MenuLink to='login'>
             <SubtitleXS>Login</SubtitleXS>
             <Icon src='user' />
           </S.MenuLink>
 
-          <S.MenuLink>
+          <S.MenuLink to='whishlist'>
             <SubtitleXS>Whishlist</SubtitleXS>
             <Icon src='heart' />
           </S.MenuLink>
 
-          <Icon src='cart' size='1.4rem' />
+          <S.MenuLink to='cart'>
+            <Icon src='cart' size='1.4rem' />
+          </S.MenuLink>
         </S.Menu>
       </ContentContainer>
     </S.TopBar>

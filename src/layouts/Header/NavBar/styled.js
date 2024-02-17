@@ -21,8 +21,8 @@ export const Nav = styled.nav`
   gap: 3.2rem;
 `;
 
-export const NavLink = styled.a`
-  .active {
+export const NavLink = styled(NavLinkEl)`
+  &.active {
     color: ${colors.primary};
   }
 `;

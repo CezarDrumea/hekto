@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from '../abstracts/constants';
 
 const ResetStyles = createGlobalStyle`
   *,
@@ -15,7 +16,7 @@ const ResetStyles = createGlobalStyle`
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    color: ${({ theme }) => theme.black};
+    color: ${colors.black};
   }
 
   a:link,

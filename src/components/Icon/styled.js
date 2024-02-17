@@ -5,4 +5,5 @@ export const Icon = styled.svg`
   height: ${({ $size, $height }) =>
     $height ? $height : $size ? $size : '1.6rem'};
   fill: ${({ $fill }) => ($fill ? $fill : 'currentColor')};
+  display: block;
 `;

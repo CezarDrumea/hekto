@@ -1,10 +1,10 @@
 import icons from '../../assets/icons/sprite.svg';
 import * as S from './styled';
 
-const Icon = ({ icon, size, width, height }) => {
+const Icon = ({ className, src, size, width, height }) => {
   return (
-    <S.Icon $size={size} $height={height} $width={width}>
-      <use href={`${icons}#${icon}`} xlinkHref={`${icons}#${icon}`} />
+    <S.Icon className={className} $size={size} $height={height} $width={width}>
+      <use href={`${icons}#${src}`} xlinkHref={`${icons}#${src}`} />
     </S.Icon>
   );
 };

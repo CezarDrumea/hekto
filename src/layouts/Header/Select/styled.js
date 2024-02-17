@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../../assets/abstracts/constants';
 
 export const Select = styled.select`
   background-color: transparent;
@@ -11,4 +12,8 @@ export const Select = styled.select`
   outline: none;
   width: min-content;
   flex: 0;
+
+  option {
+    color: ${colors.black};
+  }
 `;

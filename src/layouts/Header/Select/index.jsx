@@ -2,7 +2,7 @@ import * as S from './styled';
 
 const Select = ({ options }) => {
   return (
-    <S.Select id='select'>
+    <S.Select>
       {options.map((option) => (
         <option value={option} key={option}>
           {option}

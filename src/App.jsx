@@ -6,10 +6,6 @@ const App = () => {
   return (
     <>
       <Header />
-
-      <BrowserRouter>
-        <Routes></Routes>
-      </BrowserRouter>
     </>
   );
 };

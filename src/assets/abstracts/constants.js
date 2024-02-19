@@ -10,6 +10,8 @@ export const colors = {
   grey1: '#F8F8FD',
   white: '#FFFFFF',
 
+  greyCircle: '#D9D9D9',
+
   primary: '#FB2E86',
   primaryDark: '#F0056A',
   primaryLight: '#FC5FA2',

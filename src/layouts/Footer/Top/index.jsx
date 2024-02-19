@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 const Top = () => {
   return (
     <FooterTop>
-      <ContentMaxWidthContainer>
+      <ContentMaxWidthContainer $alignItems='start'>
         <LogoColumn>
           <Icon src='logo' height='3rem' width='10.3rem' />
           <Search placeholder='Enter Email Address' btnContent='Sign Up' />

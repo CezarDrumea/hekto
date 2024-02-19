@@ -15,7 +15,6 @@ export const LogoColumn = styled.div`
   flex-direction: column;
   gap: 3.2rem;
   margin-right: 14.4rem;
-  align-self: flex-start;
 `;
 
 export const CategoriesColumn = styled.div`

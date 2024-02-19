@@ -22,7 +22,7 @@ export const Contact = styled.a`
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-right: 4.8rem;
+  margin-right: ${({ $withMargin }) => $withMargin && '4.8rem'};
 `;
 
 export const MenuLink = styled(Link)`

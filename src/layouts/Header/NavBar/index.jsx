@@ -6,22 +6,25 @@ import { HeaderNavBar, LogoIcon, Nav, Search, StyledNavLink } from './styled';
 const NavBar = () => {
   return (
     <HeaderNavBar>
-      <ContentMaxWidthContainer>
+      <ContentMaxWidthContainer $alignItems='center'>
         <LogoIcon src='logo' width='10rem' height='2.8rem' />
 
         <Nav>
-          <StyledNavLink to='home'>
-            <TextLabel>Home</TextLabel>
-          </StyledNavLink>
-          <StyledNavLink to='products'>
-            <TextLabel>Products</TextLabel>
-          </StyledNavLink>
-          <StyledNavLink to='blog'>
-            <TextLabel>Blog</TextLabel>
-          </StyledNavLink>
-          <StyledNavLink to='contacts'>
-            <TextLabel>Contacts</TextLabel>
-          </StyledNavLink>
+          <TextLabel as={StyledNavLink} to='home'>
+            Home
+          </TextLabel>
+
+          <TextLabel as={StyledNavLink} to='products'>
+            Products
+          </TextLabel>
+
+          <TextLabel as={StyledNavLink} to='blog'>
+            Blog
+          </TextLabel>
+
+          <TextLabel as={StyledNavLink} to='contacts'>
+            Contacts
+          </TextLabel>
         </Nav>
 
         <Search

@@ -1,19 +1,12 @@
 import styled from 'styled-components';
 import { colors } from '../../../assets/abstracts/constants';
 
-import { ContentMaxWidthContainer } from '../../../assets/styles/containers';
-
 export const FooterBottom = styled.div`
   height: 5.6rem;
   background-color: ${colors.grey2};
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-export const ContentMaxWidthFlexContainer = styled(ContentMaxWidthContainer)`
-  display: flex;
-  justify-content: space-between;
 `;
 
 export const SocialMediaIcons = styled.div`

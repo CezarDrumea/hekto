@@ -1,7 +1,7 @@
-import * as S from './styled';
+import { StyledButton } from './styled';
 
 const Button = ({ children }) => {
-  return <S.Button>{children}</S.Button>;
+  return <StyledButton>{children}</StyledButton>;
 };
 
 export default Button;

@@ -11,8 +11,8 @@ import { Contact, HeaderTopBar, Menu, MenuLink } from './styled';
 const TopBar = () => {
   return (
     <HeaderTopBar>
-      <ContentMaxWidthContainer>
-        <Contact href='mailto:mhhasanul@gmail.com'>
+      <ContentMaxWidthContainer $alignItems='center'>
+        <Contact href='mailto:mhhasanul@gmail.com' $withMargin>
           <Icon src='envelope' />
           <SubtitleXS>mhhasanul@gmail.com</SubtitleXS>
         </Contact>

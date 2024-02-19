@@ -1,4 +1,6 @@
+import { AppMinHeightContainer } from '../../assets/styles/containers';
+
 const Cart = () => {
-  return <div>Cart</div>;
+  return <AppMinHeightContainer>Cart</AppMinHeightContainer>;
 };
 export default Cart;

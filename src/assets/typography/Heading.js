@@ -1,8 +1,10 @@
 import styled, { css } from 'styled-components';
+import { colors } from '../abstracts/constants';
 
 const defaultHeadingStyles = css`
   text-transform: capitalize;
   font-weight: 700;
+  color: ${({ $color }) => colors[$color]};
 `;
 
 export const Heading1 = styled.h4`

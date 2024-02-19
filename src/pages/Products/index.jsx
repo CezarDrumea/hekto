@@ -1,4 +1,6 @@
+import { AppMinHeightContainer } from '../../assets/styles/containers';
+
 const Products = () => {
-  return <div>Products</div>;
+  return <AppMinHeightContainer>Products</AppMinHeightContainer>;
 };
 export default Products;

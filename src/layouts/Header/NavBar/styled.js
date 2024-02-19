@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import SVGIcon from '../../../components/Icon';
+import Icon from '../../../components/Icon';
 import SearchEl from '../../../components/Search';
 import { NavLink as NavLinkEl } from 'react-router-dom';
 import { colors } from '../../../assets/abstracts/constants';
 
-export const NavBar = styled.div`
+export const HeaderNavBar = styled.div`
   background-color: ${({ theme }) => theme.white};
   height: 7.2rem;
   display: flex;
@@ -12,7 +12,7 @@ export const NavBar = styled.div`
   align-items: center;
 `;
 
-export const Icon = styled(SVGIcon)`
+export const LogoIcon = styled(Icon)`
   margin-right: 8rem;
 `;
 
@@ -21,7 +21,7 @@ export const Nav = styled.nav`
   gap: 3.2rem;
 `;
 
-export const NavLink = styled(NavLinkEl)`
+export const StyledNavLink = styled(NavLinkEl)`
   &.active {
     color: ${colors.primary};
   }

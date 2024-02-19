@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors } from '../../../assets/abstracts/constants';
 
-export const Select = styled.select`
+export const StyledSelect = styled.select`
   background-color: transparent;
   border: none;
   color: ${({ theme }) => theme.white};

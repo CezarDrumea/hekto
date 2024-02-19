@@ -1,31 +1,36 @@
-import * as S from './styled';
-import { LabelText } from '../../../assets/typography/LabelText';
-import { ContentContainer } from '../styled';
+import { TextLabel } from '../../../assets/typography/TextLabel';
+import Icon from '../../../components/Icon';
+import { ContentMaxWidthContainer } from '../../../assets/styles/containers';
+import { HeaderNavBar, LogoIcon, Nav, Search, StyledNavLink } from './styled';
 
 const NavBar = () => {
   return (
-    <S.NavBar>
-      <ContentContainer>
-        <S.Icon src='logo' width='10rem' height='2.8rem' />
+    <HeaderNavBar>
+      <ContentMaxWidthContainer>
+        <LogoIcon src='logo' width='10rem' height='2.8rem' />
 
-        <S.Nav>
-          <S.NavLink to='home'>
-            <LabelText>Home</LabelText>
-          </S.NavLink>
-          <S.NavLink to='products'>
-            <LabelText>Products</LabelText>
-          </S.NavLink>
-          <S.NavLink to='blog'>
-            <LabelText>Blog</LabelText>
-          </S.NavLink>
-          <S.NavLink to='contacts'>
-            <LabelText>Contacts</LabelText>
-          </S.NavLink>
-        </S.Nav>
+        <Nav>
+          <StyledNavLink to='home'>
+            <TextLabel>Home</TextLabel>
+          </StyledNavLink>
+          <StyledNavLink to='products'>
+            <TextLabel>Products</TextLabel>
+          </StyledNavLink>
+          <StyledNavLink to='blog'>
+            <TextLabel>Blog</TextLabel>
+          </StyledNavLink>
+          <StyledNavLink to='contacts'>
+            <TextLabel>Contacts</TextLabel>
+          </StyledNavLink>
+        </Nav>
 
-        <S.Search placeholder='Text' />
-      </ContentContainer>
-    </S.NavBar>
+        <Search
+          placeholder='Text'
+          btnContent={<Icon src='magnifying-glass' size='2rem' />}
+          width='32.8rem'
+        />
+      </ContentMaxWidthContainer>
+    </HeaderNavBar>
   );
 };
 

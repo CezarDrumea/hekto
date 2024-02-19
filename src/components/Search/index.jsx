@@ -1,15 +1,12 @@
 import Button from '../Button';
-import Icon from '../Icon';
-import * as S from './styled';
+import { SearchContainer } from './styled';
 
-const Search = ({ className, placeholder }) => {
+const Search = ({ className, placeholder, btnContent, width }) => {
   return (
-    <S.SearchContainer className={className}>
+    <SearchContainer className={className} $width={width}>
       <input type='text' placeholder={placeholder} />
-      <Button>
-        <Icon src='magnifying-glass' size='2rem' />
-      </Button>
-    </S.SearchContainer>
+      <Button>{btnContent}</Button>
+    </SearchContainer>
   );
 };
 

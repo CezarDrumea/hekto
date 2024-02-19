@@ -1,23 +1,25 @@
 import styled from 'styled-components';
+import { colors } from '../abstracts/constants';
 
-export const BodyText = styled.p`
+export const TextBody = styled.p`
   font-family: Lato, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2rem;
+  color: ${({ $color }) => colors[$color]};
 `;
 
-export const BodyTextL = styled(BodyText)`
+export const TextBodyL = styled(TextBody)`
   font-size: 1.8rem;
   line-height: 2.4rem;
 `;
 
-export const BodyTextBold = styled(BodyText)`
+export const TextBodyBold = styled(TextBody)`
   font-weight: 700;
   letter-spacing: 0.1rem;
 `;
 
-export const BodyTextS = styled(BodyText)`
+export const TextBodyS = styled(TextBody)`
   font-size: 1.4rem;
   line-height: 1.6rem;
 `;

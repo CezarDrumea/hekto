@@ -1,4 +1,6 @@
+import { AppMinHeightContainer } from '../../assets/styles/containers';
+
 const Home = () => {
-  return <div>Home</div>;
+  return <AppMinHeightContainer>Home</AppMinHeightContainer>;
 };
 export default Home;

@@ -1,14 +1,14 @@
-import * as S from './styled';
+import { StyledSelect } from './styled';
 
 const Select = ({ options }) => {
   return (
-    <S.Select>
+    <StyledSelect>
       {options.map((option) => (
         <option value={option} key={option}>
           {option}
         </option>
       ))}
-    </S.Select>
+    </StyledSelect>
   );
 };
 

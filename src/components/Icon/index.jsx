@@ -1,11 +1,26 @@
 import icons from '../../assets/icons/sprite.svg';
-import * as S from './styled';
+import { SVGIcon } from './styled';
 
-const Icon = ({ className, src, size, width, height }) => {
+const Icon = ({
+  className,
+  src,
+  size,
+  width,
+  height,
+  bgColor,
+  borderColor,
+}) => {
   return (
-    <S.Icon className={className} $size={size} $height={height} $width={width}>
+    <SVGIcon
+      className={className}
+      $size={size}
+      $height={height}
+      $width={width}
+      $bgColor={bgColor}
+      $borderColor={borderColor}
+    >
       <use href={`${icons}#${src}`} xlinkHref={`${icons}#${src}`} />
-    </S.Icon>
+    </SVGIcon>
   );
 };
 

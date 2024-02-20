@@ -8,4 +8,5 @@ const Icon = ({ className, src, size, width, height }) => {
     </S.Icon>
   );
 };
+
 export default Icon;

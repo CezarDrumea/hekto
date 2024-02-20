@@ -16,5 +16,6 @@ export const ContentMaxWidthContainer = styled.div`
     $alignItems || $justifyContent ? 'flex' : null};
   align-items: ${({ $alignItems }) => $alignItems};
   justify-content: ${({ $justifyContent }) => $justifyContent};
+  gap: ${({ $gap }) => $gap};
   flex: 1;
 `;

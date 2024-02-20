@@ -24,7 +24,7 @@ const Products = () => {
           </TextBody>
         </ProductsNav>
 
-        <FiltersAndProducts></FiltersAndProducts>
+        <FiltersAndProducts />
       </ContentMaxWidthContainer>
     </AppMinHeightContainer>
   );

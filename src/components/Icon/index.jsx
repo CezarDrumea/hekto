@@ -9,6 +9,9 @@ const Icon = ({
   height,
   bgColor,
   borderColor,
+  color,
+  pointer,
+  onClick,
 }) => {
   return (
     <SVGIcon
@@ -18,6 +21,9 @@ const Icon = ({
       $width={width}
       $bgColor={bgColor}
       $borderColor={borderColor}
+      $color={color}
+      $pointer={pointer}
+      onClick={onClick}
     >
       <use href={`${icons}#${src}`} xlinkHref={`${icons}#${src}`} />
     </SVGIcon>

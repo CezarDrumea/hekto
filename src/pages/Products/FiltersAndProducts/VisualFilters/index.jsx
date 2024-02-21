@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { ContentMaxWidthContainer } from '../../../../assets/styles/containers';
 import { TextBody } from '../../../../assets/typography/TextBody';
+import CustomSelect from '../../../../components/CustomSelect';
 import Icon from '../../../../components/Icon';
 import { FlexContainer } from './styled';
 
 const VisualFilters = () => {
+  const [isFlexView, setIsFlexView] = useState(true);
+
+  const handleViewChange = (isFlexView) => () => setIsFlexView(isFlexView);
+
   return (
     <ContentMaxWidthContainer
       $justifyContent='flex-end'
@@ -12,31 +18,31 @@ const VisualFilters = () => {
     >
       <FlexContainer>
         <TextBody $color='grey3'>Per Page</TextBody>
-        <select>
-          <option value='10'>10</option>
-          <option value='20'>20</option>
-        </select>
+        <CustomSelect options={[10, 20]} />
       </FlexContainer>
       <FlexContainer>
         <TextBody $color='grey3'>Sort By</TextBody>
-        <select>
-          <option value='high-low'>Price: High -{'>'} Low</option>
-          <option value='low-high'>Price: Low -{'>'} High</option>
-        </select>
+        <CustomSelect options={['Price: High -> Low', 'Price: Low -> High']} />
       </FlexContainer>
       <FlexContainer>
         <TextBody $color='grey3'>View</TextBody>
+
         <Icon
           src='grid-view'
           size='2.4rem'
-          borderColor='black'
-          bgColor='none'
+          borderColor={!isFlexView ? 'primary' : 'black'}
+          bgColor={!isFlexView && 'primary'}
+          pointer
+          onClick={handleViewChange(false)}
         />
+
         <Icon
           src='flex-view'
           size='2.4rem'
-          borderColor='black'
-          bgColor='none'
+          borderColor={isFlexView ? 'primary' : 'black'}
+          bgColor={isFlexView && 'primary'}
+          pointer
+          onClick={handleViewChange(true)}
         />
       </FlexContainer>
     </ContentMaxWidthContainer>

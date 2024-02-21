@@ -1,10 +1,10 @@
-import Stars from '../../../../components/Stars';
+import FilterColumn from './FilterColumn';
 import { ColumnFlexContainer } from './styled';
 
 const FunctionalFilters = () => {
   return (
     <ColumnFlexContainer>
-      <Stars filledStars={1} />
+      <FilterColumn />
     </ColumnFlexContainer>
   );
 };

@@ -1,9 +1,9 @@
+import { ColumnFlexContainer } from '../../../../assets/styles/containers';
 import FilterColumn from './FilterColumn';
-import { ColumnFlexContainer } from './styled';
 
 const FunctionalFilters = () => {
   return (
-    <ColumnFlexContainer>
+    <ColumnFlexContainer $gap='4.8rem'>
       <FilterColumn />
     </ColumnFlexContainer>
   );

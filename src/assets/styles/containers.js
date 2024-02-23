@@ -19,3 +19,9 @@ export const ContentMaxWidthContainer = styled.div`
   gap: ${({ $gap }) => $gap};
   flex: 1;
 `;
+
+export const ColumnFlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ $gap }) => $gap};
+`;
